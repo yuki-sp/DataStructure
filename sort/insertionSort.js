@@ -13,10 +13,9 @@ var insertionSort = function (array) {
 
     return result;
 }
-// let a = [5, 4, 3, 2, 1];
-// b = insertionSort(a);
-// console.log(b);
-
+// 空间复杂度O(n)
+// 时间复杂度O(n^2)
+// 稳定
 var insertionSort = function (array) {
     const len = array.length;
     for (let i = 1; i < len; i++) {
@@ -30,7 +29,6 @@ var insertionSort = function (array) {
     }
     return array;
 }
-// let a = [5, 4, 3, 2, 1];
-// let b = insertionSort(a);
-// console.log(b);
-// 使用splice好像对性能损耗大
+// 空间复杂度O(1)
+// 时间复杂度O(n^2)
+// 稳定
