@@ -13,7 +13,7 @@ var insertionSort = function (array) {
 
     return result;
 }
-let a = [5, 4, 3, 2, 1];
-b = insertionSort(a);
-console.log(b);
+// let a = [5, 4, 3, 2, 1];
+// b = insertionSort(a);
+// console.log(b);
 
