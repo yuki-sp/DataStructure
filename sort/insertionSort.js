@@ -17,3 +17,20 @@ var insertionSort = function (array) {
 // b = insertionSort(a);
 // console.log(b);
 
+var insertionSort = function (array) {
+    const len = array.length;
+    for (let i = 1; i < len; i++) {
+        let now = array[i];
+        let j = i - 1;
+        while (j >= 0 && now < array[j]) {
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = now;
+    }
+    return array;
+}
+// let a = [5, 4, 3, 2, 1];
+// let b = insertionSort(a);
+// console.log(b);
+// 使用splice好像对性能损耗大
