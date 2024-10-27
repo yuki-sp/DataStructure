@@ -107,3 +107,9 @@ class DoublyLinkedList {
         return false; // 未找到需要更新的节点
     }
 }
+// let a =new Node();
+let a=1 ,cd=3;
+let list = new DoublyLinkedList();
+list.insertAtBeginning(a);
+list.insertAtEnd(cd);
+console.log(list.search(cd));
